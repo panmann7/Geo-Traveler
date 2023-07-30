@@ -1,0 +1,104 @@
+.text{
+    position:relative;
+    top: 60px;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
+
+.profilepic{
+    padding-top:30px;
+    background-color: #EDF7F6;
+    padding-bottom: 20px;
+}
+.profiletext{
+    padding-top:30px;
+    background-color: #EDF7F6;
+    /*margin-right:10px;*/
+    padding-bottom:20px;
+    margin-bottom:10px;
+}
+.profile-img{
+    padding-top: 20px;
+    width:50%;
+}
+.achievements{
+    padding-top:20px;
+    padding-bottom: 20px;
+    width: 70%;
+}
+.icons{
+    padding-top:20px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+.whitepad{
+    width:40%;
+}
+.text-centre{
+    text-align: center;
+}
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    img{
+        width:100%;
+        height:100%;
+    }
+    .profilepic{
+        background-color: #EDF7F6;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .profiletext{
+        background-color: #EDF7F6;
+        /*margin-right:10px;*/
+        padding-bottom:20px;
+        border-right:5px solid white;
+        margin-bottom: 10px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    img{
+        width:100%;
+        height:100%;
+    }
+    .profilepic{
+        background-color: #EDF7F6;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .profiletext{
+        background-color: #EDF7F6;
+        /*margin-right:10px;*/
+        padding-bottom:20px;
+        border-right:10px solid white;
+        margin-bottom: 10px;
+    }
+    .text-centre{
+        text-align: left;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    img{
+        width:100%;
+        height:100%;
+    }
+    .profilepic{
+        background-color: #EDF7F6;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .profiletext{
+        background-color: #EDF7F6;
+        /*margin-right:10px;*/
+        padding-bottom:20px;
+        border-right:10px solid white;
+        margin-bottom: 10px;
+    }
+  }

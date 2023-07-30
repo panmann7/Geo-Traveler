@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Map</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="mapStyleHead.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="text/javascript" src="./daily_tasks.js"></script>
+  <script src="mapScript.js"></script>
+</head>
+<link rel="stylesheet" href="mapStyle.css">
+
+<body>
+  <link rel="stylesheet" href="mapStyleBody.css">
+  <!-- Navbar-->
+  <div class="navbar">
+    <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+      <a href="map.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Map</a>
+      <a href="friends.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Friends</a>
+      <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Profile</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Daily Tasks
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <ul id="ul-el"></ul>
+        </div>
+      </div>
+
+      <button id="clear-btn" class="reset-btn"
+        onclick="clear()">Restart</button>
+
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Tasks</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Map</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Friends</a>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map-container" class="w3-row-padding w3-padding-64 w3-container">
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDns9VfNOIvqqX5KePiCgEn7niYyJzsG2s&callback=initMap&v=weekly"
+      defer></script>
+  </div>
+
+  <div id="friend-distances">
+    <h5 style="margin: 0; padding: 0.8rem; text-align: center;"><strong>Closest Users</strong></h5>
+    <hr style="margin: 0; border-top: 0.1px solid #eeeeee4f;" />
+    <ol id="distances-list" style="margin: 0; padding: 0.8rem 0.8rem 0.8rem 2rem;"></ol>
+  </div>
+
+  <script src="mapScript2.js"></script>
+</body>
+
+</html>
